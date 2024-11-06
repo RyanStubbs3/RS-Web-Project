@@ -80,7 +80,7 @@ nav a:hover {
 }
 /*Sets the main page image*/
 #main-page-image {
-    background-image: url(circuits.jpg);
+    background-image: url(images/circuits.jpg);
     height: 150px;
     background-size: auto;
     background-position: center;
@@ -195,6 +195,18 @@ audio {
 .audio-container {
     display: flex;
     justify-content: center;
+}
+
+details {
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+summary {
+    font-size: 1em;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
 }
 
 /*Sets the CSS to adhere to a smaller tablet sized screen.*/

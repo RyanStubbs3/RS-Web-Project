@@ -187,6 +187,15 @@ input, textarea {
     background-color: cornsilk;
     color: darkred;
 }
+audio {
+	display: block;
+	margin-top: 1em;
+    align-content: center;
+}
+.audio-container {
+    display: flex;
+    justify-content: center;
+}
 
 /*Sets the CSS to adhere to a smaller tablet sized screen.*/
 @media only screen and (max-width: 1024px) {
@@ -249,9 +258,6 @@ input, textarea {
 	width: 8em;
 	padding-right: 5px;
     font-size: 1em;
-    }
-    input, textarea {
-	   size: auto;
     }
 }
 

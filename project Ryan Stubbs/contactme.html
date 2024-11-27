@@ -31,8 +31,20 @@
                     <li>Email: <a href="RyanStubbs03@gmail.com">RyanStubbs03@gmail.com</a></li>
                 </ul>
                 </div>
+                <script>
+                function validateForm(event) {
+                    const nameField = document.getElementById('myName');
+                    const nameValue = nameField.value.trim();
+
+                    if (nameValue.split(' ').length < 2) {
+                        event.preventDefault();
+                        alert('Please enter your full name (at least two words).');
+                        nameField.focus();
+                    }
+                }
+                </script>
                 <h3>Reach out to Ryan!</h3>
-                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="validateForm(event)">
 	                   <label for="myName">Name:</label><input type="text" name="myName" id="myName" required="required">
 	                   <label for="myEmail">Email:</label><input type="email" name="myEmail" id="myEmail" required="required">
 	                   <label for="myContent">Content:</label>
